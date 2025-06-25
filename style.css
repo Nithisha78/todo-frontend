@@ -1,0 +1,126 @@
+/* Font and background */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe5ec, #f9f7d9);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card container */
+.container {
+  background-color: #1e2a38;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  color: #ffffff;
+  border: 2px solid #00c2cb;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00c2cb;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-area input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  width: 70%;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-area button {
+  padding: 10px 16px;
+  margin-left: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.input-area button:hover {
+  background-color: #2980b9;
+}
+
+/* Task list */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #2e3a4d;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: scale(1.01);
+}
+
+.task-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #a8a8a8;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.actions button.edit {
+  background-color: #f1c40f;
+  color: #000;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+}
+
+/* Counter */
+#taskCount {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #bbb;
+}
