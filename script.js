@@ -1,4 +1,5 @@
-const apiUrl = "http://localhost:3000/tasks";
+const apiUrl = "https://todo-backend-044v.onrender.com/tasks";
+
 
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
